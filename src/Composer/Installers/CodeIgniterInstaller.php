@@ -2,7 +2,7 @@
 
 namespace Composer\Installers;
 
-class CodeIgniterInstaller extends BaseInstaller
+class CodeIgniterInstaller extends CodeIgniterInstaller
 {
     /** @var array<string, string> */
     protected $locations = array(
