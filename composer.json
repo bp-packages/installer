@@ -1,7 +1,7 @@
 {
-    "name": "bp-packages/installer",
-    "type": "composer-plugin",
-    "description": "Installer",
+    "name": "bp-packages/leads",
+    "type": "cakephp-plugin",
+    "description": "CRUD Leads",
     "license": "MIT",
     "authors": [
         {
@@ -11,16 +11,19 @@
     ],
     "autoload": {
         "psr-4": {
-            "PhpDocumentor\\Composer\\": "src/"
+            "BpPackage\\Leads\\": "src/"
         }
     },
     "extra": {
-        "class": "PhpDocumentor\\Composer\\TemplateInstallerPlugin"
+        "installer-paths": {
+            "installer-name": "Ftp",
+            "your/custom/path/{$name}/": [
+                "bp-packages/leads"
+            ]
+        }
     },
     "require": {
-        "composer-plugin-api": "^1.0"
+        "composer/installers": "~1.0"
     },
-    "require-dev": {
-        "composer/composer": "^1.3"
-    }
+    "require-dev": {}
 }
