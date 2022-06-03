@@ -13,17 +13,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Budget\\": "Installer/"
+            "Installer\\": "src/"
         }
     },
     "minimum-stability": "dev",
-    "type": "decibel-app",
-    "extra": {
-        "installer-name": "MODULOS/Installer",
-        "installer-paths": {
-            "{$name}": [
-                "bp-packages/installer"
-            ]
-        }
-    }
+    "type": "codeigniter-library"
 }
