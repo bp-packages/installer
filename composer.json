@@ -1,7 +1,7 @@
 {
-    "name": "bp-packages/leads",
+    "name": "bp-packages/installer",
     "type": "cakephp-plugin",
-    "description": "CRUD Leads",
+    "description": "installer",
     "license": "MIT",
     "authors": [
         {
@@ -11,19 +11,19 @@
     ],
     "autoload": {
         "psr-4": {
-            "BpPackage\\Leads\\": "src/"
+            "BpPackage\\Installer\\": "src/"
         }
     },
     "extra": {
         "installer-paths": {
             "installer-name": "Ftp",
-            "your/custom/path/{$name}/": [
-                "bp-packages/leads"
+            "your/custom/path/{$name}/Test": [
+                "bp-packages/installer"
             ]
         }
     },
     "require": {
-        "composer/installers": "~1.0"
+        "composer/installers": "~2.0"
     },
     "require-dev": {}
 }
