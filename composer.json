@@ -11,11 +11,11 @@
     ],
     "autoload": {
         "psr-4": {
-            "phpDocumentor\\Composer": "src/"
+            "PhpDocumentor\\Composer": "src/"
         }
     },
     "extra": {
-        "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin"
+        "class": "PhpDocumentor\\Composer\\TemplateInstallerPlugin"
     },
     "require": {
         "composer-plugin-api": "^1.0"

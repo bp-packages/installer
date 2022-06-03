@@ -1,6 +1,6 @@
 <?php
 
-namespace phpDocumentor\Composer;
+namespace PhpDocumentor\Composer;
 
 use Composer\Package\PackageInterface;
 use Composer\Installer\LibraryInstaller;

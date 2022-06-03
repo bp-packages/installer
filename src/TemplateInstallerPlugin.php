@@ -1,6 +1,6 @@
 <?php
 
-namespace phpDocumentor\Composer;
+namespace PhpDocumentor\Composer;
 
 use Composer\Composer;
 use Composer\IO\IOInterface;
