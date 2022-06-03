@@ -1,10 +1,8 @@
 {
     "name": "bp-packages/installer",
-    "description": "CRUD installer",
+    "type": "composer-plugin",
+    "description": "Installer",
     "license": "MIT",
-    "require": {
-        "composer/installers": "~2.0"
-    },
     "authors": [
         {
             "name": "leomaciel",
@@ -12,10 +10,17 @@
         }
     ],
     "autoload": {
-        "psr-4": {
-            "Installer\\": "src/"
+        "psr-0": {
+            "phpDocumentor\\Composer": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "type": "codeigniter-library"
+    "extra": {
+        "class": "phpDocumentor\\Composer\\TemplateInstallerPlugin"
+    },
+    "require": {
+        "composer-plugin-api": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.3"
+    }
 }
