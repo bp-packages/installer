@@ -1,8 +1,10 @@
 {
     "name": "bp-packages/installer",
-    "type": "cakephp-plugin",
     "description": "installer",
     "license": "MIT",
+    "require": {
+        "composer/installers": "~2.0"
+    },
     "authors": [
         {
             "name": "leomaciel",
@@ -14,16 +16,14 @@
             "BpPackage\\Installer\\": "src/"
         }
     },
+    "minimum-stability": "dev",
+    "type": "decibel-app",
     "extra": {
+        "installer-name": "MODULOS/Budget",
         "installer-paths": {
-            "installer-name": "Ftp",
-            "your/custom/path/{$name}/Test": [
-                "bp-packages/installer"
+            "{$name}": [
+                "bp-packages/budget"
             ]
         }
-    },
-    "require": {
-        "composer/installers": "~1.0"
-    },
-    "require-dev": {}
+    }
 }
