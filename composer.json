@@ -18,9 +18,11 @@
         "class": "PhpDocumentor\\Composer\\TemplateInstallerPlugin"
     },
     "require": {
-        "composer-plugin-api": "^1.0"
+        "php": "^8",
+        "composer-plugin-api": "^2.0"
     },
     "require-dev": {
+        "php": "^8",
         "composer/composer": "^1.3"
     }
 }
